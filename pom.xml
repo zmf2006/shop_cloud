@@ -9,13 +9,9 @@
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
   <modules>
-    <module>typePro</module>
-    <module>brandPro</module>
     <module>eurekaServer</module>
-    <module>brand_ribbon</module>
-    <module>fen</module>
-    <module>hystrix</module>
     <module>hystrixDashboard</module>
+    <module>user</module>
   </modules>
 
   <name>shop_cloud</name>

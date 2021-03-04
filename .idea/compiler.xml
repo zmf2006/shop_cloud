@@ -12,6 +12,7 @@
         <module name="fen" />
         <module name="hystrix" />
         <module name="hystrixDashboard" />
+        <module name="user" />
         <module name="eurekaServer" />
       </profile>
     </annotationProcessing>
@@ -32,6 +33,7 @@
       <module name="hystrix" options="-parameters" />
       <module name="hystrixDashboard" options="-parameters" />
       <module name="typePro" options="-parameters" />
+      <module name="user" options="-parameters" />
     </option>
   </component>
 </project>

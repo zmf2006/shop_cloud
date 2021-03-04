@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.fh.mapper.StudentMapper">
+
+    <insert id="add" parameterType="com.fh.bean.StudentBean">
+        insert into t_student (id,name,sex,birthday,score,hobby)
+        value
+       (#{id},#{name},#{sex},#{birthday},#{score},#{hobby})
+    </insert>
+
+
+    <select id="query" resultType="com.fh.bean.StudentBean">
+        select * from t_student
+    </select>
+
+
+    <update id="updateStudent" parameterType="com.fh.bean.StudentBean">
+        update  t_student set name=#{name},sex=#{sex},birthday=#{birthday},score=#{score},
+        hobby=#{hobby} where id=#{id}
+    </update>
+
+    <delete id="deleteStudent" parameterType="java.lang.Integer">
+        delete from t_student where id=#{id}
+    </delete>
+
+</mapper>
