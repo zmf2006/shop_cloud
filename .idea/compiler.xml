@@ -8,12 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="brand_ribbon" />
         <module name="brandPro" />
-        <module name="eurekaServer" />
+        <module name="typePro" />
         <module name="fen" />
         <module name="hystrix" />
         <module name="hystrixDashboard" />
-        <module name="typePro" />
         <module name="user" />
+        <module name="eurekaServer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,11 +28,12 @@
       <module name="brand_feign" options="-parameters" />
       <module name="brand_fen" options="-parameters" />
       <module name="brand_ribbon" options="-parameters" />
-      <module name="eurekaServer" options="" />
+      <module name="eurekaServer" options="-parameters" />
       <module name="fen" options="-parameters" />
       <module name="hystrix" options="-parameters" />
-      <module name="hystrixDashboard" options="" />
+      <module name="hystrixDashboard" options="-parameters" />
       <module name="typePro" options="-parameters" />
+      <module name="user" options="-parameters" />
     </option>
   </component>
 </project>
