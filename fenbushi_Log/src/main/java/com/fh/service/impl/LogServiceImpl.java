@@ -26,6 +26,8 @@ public class LogServiceImpl implements LogService {
     @Override
     public void addLog(Log log) {
 
+        
+
         log.setIpAddr(request.getRemoteAddr());
                             //java对象转 json字符串
         String logJsonStr =   JSONObject.toJSONString(log);
