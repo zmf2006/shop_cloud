@@ -40,6 +40,11 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!--  springboot整合redis      -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
 
         <!-- java对象 和json对象互转  -->
         <dependency>
