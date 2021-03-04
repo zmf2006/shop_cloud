@@ -20,8 +20,7 @@ public class StudentController {
      * @return
      */
     @RequestMapping("addStudent")
-   public ResultData addStudent(
-                                    @RequestBody StudentBean studentBean){
+   public ResultData addStudent(@RequestBody StudentBean studentBean){
         studentService.addStudent(studentBean);
        return  ResultData.success(null);
    }
@@ -44,7 +43,7 @@ public class StudentController {
      * @return
      */
     @RequestMapping("updateStudent")
-   public ResultData updateStudent(@RequestBody  StudentBean studentBean){
+   public ResultData updateStudent(@RequestBody StudentBean studentBean){
         studentService.updateStudent(studentBean);
         return  ResultData.success(null);
    }
