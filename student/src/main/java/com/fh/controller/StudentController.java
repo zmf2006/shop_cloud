@@ -4,9 +4,7 @@ import com.fh.bean.StudentBean;
 import com.fh.service.StudentService;
 import com.fh.utils.ResultData;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("student/")
@@ -22,7 +20,8 @@ public class StudentController {
      * @return
      */
     @RequestMapping("addStudent")
-   public ResultData addStudent(StudentBean studentBean){
+   public ResultData addStudent(
+                                    @RequestBody StudentBean studentBean){
         studentService.addStudent(studentBean);
        return  ResultData.success(null);
    }
@@ -45,14 +44,14 @@ public class StudentController {
      * @return
      */
     @RequestMapping("updateStudent")
-   public ResultData updateStudent(StudentBean studentBean){
+   public ResultData updateStudent(@RequestBody  StudentBean studentBean){
         studentService.updateStudent(studentBean);
         return  ResultData.success(null);
    }
 
 
    @RequestMapping("deleteStudent")
-    public ResultData deleteStudent(Integer id){
+    public ResultData deleteStudent(@RequestParam(value = "id")  Integer id){
         studentService.deleteStudent(id);
         return  ResultData.success(null);
     }
