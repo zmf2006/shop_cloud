@@ -21,4 +21,9 @@ public class UserController {
        return userService.insertUser(user);
     }
 
+    @RequestMapping("login")
+    public Map login (User user){
+        return userService.login(user);
+    }
+
 }
