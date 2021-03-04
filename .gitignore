@@ -1,0 +1,6 @@
+# Project exclude paths
+/brand_ribbon/target/
+/brandPro/target/
+/eurekaServer/target/
+/fen/target/
+/typePro/target/
